@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Q1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="EmployeeWindow" Height="650" Width="800">
     <Grid>
+        <StackPanel Margin="0,0,300,291" Background="Azure">
+            <Label Content="Employee Id">
+            </Label>
+            <TextBox TextWrapping="Wrap" Text="TextBox" Width="490" Name="employeeId"/>
 
+            <Label Content="Employee Name">
+            </Label>
+            <TextBox TextWrapping="Wrap" Text="TextBox" Width="490" Name="employeeName"/>
+
+            <Label Content="Gender">
+            </Label>
+            <DockPanel>
+                <RadioButton Content="Male" Margin="0,0,30,0" IsChecked="true" Name="male"/>
+                <RadioButton Content="Female" Name="female"/>
+            </DockPanel>
+            <Label Content="Date of birth">
+            </Label>
+            <DatePicker Name="dob"/>
+
+            <Label Content="Phone">
+            </Label>
+            <TextBox TextWrapping="Wrap" Text="TextBox" Width="490" Name="phone"/>
+
+            <Label Content="IDNumber">
+            </Label>
+            <TextBox TextWrapping="Wrap" Text="TextBox" Width="490" Name="idNumber"/>
+
+            <DockPanel>
+                <Button Content="Refresh" Width="105"/>
+                <Button Content="Add" Width="105"/>
+                <Button Content="Edit" Width="105"/>
+                <Button Content="Delete" Width="105"/>
+            </DockPanel>
+        </StackPanel>
     </Grid>
 </Window>
